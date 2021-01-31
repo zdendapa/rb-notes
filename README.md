@@ -8,5 +8,5 @@ After npm install run `ng serve` for a dev server. Configured to: `http://localh
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Creator
+## Author
 zdenek.pavlicek@gmail.com
