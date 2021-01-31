@@ -1,0 +1,10 @@
+<button type="button" class="btn btn-primary" routerLink=""><bi name="backspace" class="big"></bi>{{ 'BACK' | translate }}</button>
+
+<textarea #noteArea class="form-control" rows="10" [readonly]="noteReadonly" >{{ note?.text }}</textarea>
+
+<button *ngIf="!isNew" (click)="delete(note.id)" type="button" class="btn btn-primary">{{ 'DELETE' | translate }}</button>
+<button *ngIf="noteReadonly && !isNew" (click)="noteReadonly = false" type="button" class="btn btn-primary">{{ 'MODIFY' | translate }}</button>
+<button *ngIf="isNew" (click)="add(noteArea.value)" type="button" class="btn btn-primary">{{ 'ADD' | translate }}</button>
+<button *ngIf="!noteReadonly && !isNew" (click)="save(noteArea.value)" type="button" class="btn btn-primary">{{ 'SAVE' | translate }}</button>
+<button *ngIf="!noteReadonly && !isNew" (click)="noteArea.value = note.text; noteReadonly = true" type="button" 
+    class="btn btn-primary">{{ 'CANCEL_EDIT' | translate }}</button>

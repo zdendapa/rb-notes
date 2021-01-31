@@ -1,0 +1,5 @@
+<select #langSelect (change)="translate.use(langSelect.value)" type="button"
+  class="btn btn-primary dropdown-toggle lan-switch">
+  <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">
+    {{ (lang === 'cs' ? 'cz' : lang) | uppercase }}</option>
+</select>

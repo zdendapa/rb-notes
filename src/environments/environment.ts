@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  // context root of application (for static assets)
+  contextRoot: '',
+  // REST API context root (for BE calls)
+  apiContextRoot: '',
+
+  // path to application`s assets (config, images,...)
+  assets: '',
+
 };
 
 /*

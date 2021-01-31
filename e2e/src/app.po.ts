@@ -6,6 +6,14 @@ export class AppPage {
   }
 
   async getTitleText(): Promise<string> {
-    return element(by.css('app-root .content span')).getText();
+    return element(by.css('app-root .main-title')).getText();
+  }
+
+  async getNotesCount(): Promise<number> {
+    return element.all(by.css('app-notes-list p')).count()
+  }
+
+  async getFirstNoteText(): Promise<string> {
+    return element(by.css('app-note textarea')).getText();
   }
 }

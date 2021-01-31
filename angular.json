@@ -30,6 +30,9 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/app/styles"]
+            },
             "scripts": []
           },
           "configurations": {
@@ -116,6 +119,9 @@
             "devServerTarget": "rb-notes:serve"
           },
           "configurations": {
+            "noserve": {
+              "devServerTarget": ""
+            },
             "production": {
               "devServerTarget": "rb-notes:serve:production"
             }
@@ -124,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "rb-notes"
+  "defaultProject": "rb-notes",
+  "cli": {
+    "analytics": false
+  }
 }
