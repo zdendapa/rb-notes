@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
 
-After nmp install run `ng serve` for a dev server. Configured to: `http://localhost:4200/`.
+After npm install run `ng serve` for a dev server. Configured to: `http://localhost:4200/`.
 
 ## Running end-to-end tests
 
